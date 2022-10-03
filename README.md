@@ -29,8 +29,8 @@ Os usuários devem ser capazes de:
 
 ### Links
 
-- URL da solução: [](https://github.com/rodrigosenapires/produto-cartao/blob/main/index.html)
-- URL do site ao vivo: [](https://rodrigosenapires.github.io/produto-cartao/)
+- URL da solução: [Código](https://github.com/rodrigosenapires/produto-cartao/blob/main/index.html)
+- URL do site ao vivo: [Site](https://rodrigosenapires.github.io/produto-cartao/)
 
 ## Meu processo
 
