@@ -1,0 +1,152 @@
+:root {
+    /* cores: */
+    --ciano-escuro:hsl(158, 36%, 37%);
+    --creme:hsl(30, 38%, 92%);
+    --azul-muito-escuro:hsl(212, 21%, 14%);
+    --azul-acinzentado-escuro:hsl(228, 12%, 48%);
+    --branco:hsl(0, 0%, 100%);
+
+    /* Tipografia: */
+    --fonte-titulo: 'Fraunces', serif;
+    --fonte-principal: 'Montserrat', sans-serif;
+}
+
+html {
+    height: 100vh;
+    width: 100vw;
+}
+
+body {
+    background-color: var(--creme);
+    font-family: var(--fonte-principal);
+    color: var(--azul-acinzentado-escuro);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.principal {
+    padding: 24px 16px;
+}
+    
+.cartao {
+    width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: var(--branco);
+}
+
+.cartaoImagemDesktop {
+    display: none;
+}
+
+.cartaoConteudo {
+    padding: 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 1rem;
+}
+
+.categoria {
+    grid-column: span 2;
+    text-transform: uppercase;
+    
+}
+
+.titulo {
+    font-family: var(--fonte-titulo);
+    font-size: 2rem;
+    color: black;
+    grid-column: span 2;
+}
+
+.cartaoInfo {
+    grid-column: span 2;
+}
+
+.precoDestaque {
+    font-weight: 700;
+    font-size: 2rem;
+    color: var(--ciano-escuro);
+
+}
+
+.preco {
+    text-decoration: line-through;
+    
+}
+
+.botaoCarrinho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--ciano-escuro);
+    color: var(--branco);
+    width: 100%;
+    height: 3rem;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    padding: 1rem;
+    grid-column: span 2;
+}
+
+.icone {
+    margin-right: 8px;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    margin-top: .5rem;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (min-width: 792px) {
+    .cartao {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 800px;
+        height: 600px;
+    }
+
+    .cartaoConteudo {
+        display: grid;
+        gap: 0;
+    }
+
+    .categoria {
+        font-size: 1.1rem;
+    }
+
+    .titulo {
+        font-size: 2.2rem;
+    }
+
+    .cartaoInfo {
+        font-size: 1.3rem;
+    }
+
+    .precoDestaque {
+        font-size: 2.2rem;
+    }
+
+    .botaoCarrinho {
+        font-size: 1.1rem;
+    }
+
+    .cartaoImagemMobile {
+        display: none;
+    }
+
+    .cartaoImagemDesktop {
+        display: block;
+        width: 100%;
+        
+    }
+
+}
